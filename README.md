@@ -13,4 +13,10 @@ A indexação pode demorar um pouco mais de 1 minuto para finalizar. Para acompa
 
 Para consultar a primeira página dos animais indexados, execute: curl --location --request GET 'http://localhost:8080/v1/adoptions/search'
 
+É possível realizar alguns filtros na consulta de animais. O Swagger da aplicação dispõe de uma interface amigável para a utilização desses filtros.
+
 Para trocar o status de um animal para Adotado, por exemplo, execute (informando o identificador do animal): curl --location -g --request POST 'http://localhost:8080/v1/adoptions/change-status/{id}/status/Adotado'
+
+O deploy da aplicação foi realizado no Heroku.
+Url: https://adoption.herokuapp.com/
+Swagger: https://adoption.herokuapp.com/swagger-ui/index.html
